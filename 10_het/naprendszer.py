@@ -6,11 +6,7 @@ INPUT = "naprendszer.txt"
 
 
 def is_correct_line(szo: str) -> bool:
-    n = re.search(r"j.*.*s.*u.*n", szo)
-    if n:
-        return True
-    else:
-        return False
+    return re.search(r"j.*.*s.*u.*n", szo)
 
 
 def main() -> None:
